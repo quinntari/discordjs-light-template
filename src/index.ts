@@ -1,10 +1,16 @@
 import { botToken } from './config'
 import AppBot from './structures/BotApp'
 import { logger } from './utils/logger'
-import Discord from 'discord.js-light'
+import Discord, { AnyChannel } from 'discord.js-light'
 
 if (!botToken) {
 	throw new Error('No bot token defined in .env')
+}
+
+function channelFilter (channel: AnyChannel) {
+	return 'lastMessageId' in channel && (
+		!channel.lastMessageId || Discord.SnowflakeUtil.timestampFrom(channel.lastMessageId) < Date.now() - 3600000
+	)
 }
 
 const app = new AppBot({
@@ -16,8 +22,16 @@ const app = new AppBot({
 	makeCache: Discord.Options.cacheWithLimits({
 		ApplicationCommandManager: 0, // guild.commands
 		BaseGuildEmojiManager: 0, // guild.emojis
-		ChannelManager: 0, // client.channels
-		GuildChannelManager: 0, // guild.channels
+		ChannelManager: {
+			maxSize: 0,
+			sweepFilter: () => channelFilter,
+			sweepInterval: 3600
+		},
+		GuildChannelManager: {
+			maxSize: 0,
+			sweepFilter: () => channelFilter,
+			sweepInterval: 3600
+		},
 		GuildBanManager: 0, // guild.bans
 		GuildInviteManager: 0, // guild.invites
 		GuildManager: Infinity, // client.guilds

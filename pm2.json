@@ -1,0 +1,9 @@
+{
+	"apps": [
+		{
+			"name": "discord-bot",
+			"script": "./build/index.js",
+			"interpreter_args": "-r dotenv/config --enable-source-maps"
+		}
+	]
+}

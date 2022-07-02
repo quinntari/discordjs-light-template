@@ -1,4 +1,3 @@
-import { Message } from 'discord.js-light'
 import { prefix, adminUsers } from '../config'
 import { logger } from '../utils/logger'
 import { reply } from '../utils/messageUtils'
@@ -48,7 +47,7 @@ export default {
 			if (!command) {
 				if (prefixUsed !== prefix) {
 					// player mentioned bot, maybe they need help?
-					await reply(message as Message, {
+					await reply(message, {
 						content: 'Do you need help? use the `/help` command!'
 					})
 				}
@@ -60,7 +59,7 @@ export default {
 			}
 
 			if (!command.worksInDMs && message.channel.type === 'DM') {
-				await reply(message as Message, {
+				await reply(message, {
 					content: 'That command can\'t be used in DMs!'
 				})
 				return

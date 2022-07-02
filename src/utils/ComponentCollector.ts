@@ -152,8 +152,7 @@ class ComponentCollector {
 			 */
 			continuePagination: boolean
 			/**
-			 * If this custom component changed the pages in any way, you can supply the new pages here,
-			 * the length of the new pages array must be the SAME as the array provided initially
+			 * If this custom component changed the pages in any way, you can supply the new pages here
 			 */
 			newPages?: {
 				messages: MessageOptions[]
@@ -162,7 +161,7 @@ class ComponentCollector {
 				 */
 				addPageComponents?: boolean
 				/**
-				 * Whether to reset the page to 0, requires the provided new pages array length to be same as initial message array provided.
+				 * Whether to reset the page to 0, requires the provided new pages array length to be SAME as initial message array provided.
 				 * defaults true
 				 */
 				resetPageNumber?: boolean

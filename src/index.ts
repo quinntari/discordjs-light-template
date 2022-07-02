@@ -8,8 +8,8 @@ if (!botToken) {
 }
 
 function channelFilter (channel: AnyChannel) {
-	return 'lastMessageId' in channel && (
-		!channel.lastMessageId || Discord.SnowflakeUtil.timestampFrom(channel.lastMessageId) < Date.now() - 3600000
+	return !('lastMessageId' in channel) || (
+		!channel.lastMessageId || Discord.SnowflakeUtil.timestampFrom(channel.lastMessageId) < Date.now() - (3600 * 1000)
 	)
 }
 

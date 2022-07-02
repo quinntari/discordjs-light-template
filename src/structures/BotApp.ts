@@ -114,8 +114,15 @@ class BotApp {
 	}
 
 	async loadCommands (): Promise<TextCommand[]> {
-		const commandFiles = fs.readdirSync(path.join(__dirname, '..', '/text-commands'))
 		const commandsArr: TextCommand[] = []
+		let commandFiles: string[] = []
+
+		try {
+			commandFiles = fs.readdirSync(path.join(__dirname, '..', '/text-commands'))
+		}
+		catch (err) {
+			// no files or directories
+		}
 
 		for (const file of commandFiles) {
 			if (file.endsWith('.js') || file.endsWith('.ts')) {
@@ -153,8 +160,15 @@ class BotApp {
 	}
 
 	async loadSlashCommmands (): Promise<void> {
-		const botCommandFiles = fs.readdirSync(path.join(__dirname, '..', '/slash-commands'))
 		const commands = []
+		let botCommandFiles: string[] = []
+
+		try {
+			botCommandFiles = fs.readdirSync(path.join(__dirname, '..', '/slash-commands'))
+		}
+		catch (err) {
+			// no files or directories
+		}
 
 		for (const file of botCommandFiles) {
 			if (file.endsWith('.js') || file.endsWith('.ts')) {

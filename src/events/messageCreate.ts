@@ -30,7 +30,7 @@ export default {
 
 				// manually cache channel to prevent further api calls
 				(this.bot.channels.cache as Discord.Collection<Discord.Snowflake, Discord.AnyChannel>).forceSet(channel.id, channel);
-				(message.guild?.channels.cache as Discord.Collection<Discord.Snowflake, Discord.GuildBasedChannel>).forceSet(channel.id, channel)
+				(message.guild?.channels.cache as Discord.Collection<Discord.Snowflake, Discord.GuildBasedChannel>)?.forceSet(channel.id, channel)
 			}
 
 

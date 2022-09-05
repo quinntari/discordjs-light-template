@@ -1339,10 +1339,10 @@ shebang-regex@^3.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
-slash-create@^5.7.1:
-  version "5.7.1"
-  resolved "https://registry.yarnpkg.com/slash-create/-/slash-create-5.7.1.tgz#125e5f69442b26a7bc0d0d3e135dec71d4a9694a"
-  integrity sha512-UTuOMW3D4f2k2t5aheO0abnuPLvLgj8M5pYYhaEfgKmUTJsQraTdWeMrh4syD9ZQV0qNgQTU9MCEOnhd6N8mGQ==
+slash-create@^5.9.0:
+  version "5.9.0"
+  resolved "https://registry.yarnpkg.com/slash-create/-/slash-create-5.9.0.tgz#96348d89bfd46938dd739e8d8859933c70660d89"
+  integrity sha512-dvfrPW4i/sCEerVzBiYyl28zjHY6hoVBTmWeVlNRQrWb47Kfp5o9zSJOkjGfKmxiwyOjPdnFwWCogXmBtldNkA==
   dependencies:
     eventemitter3 "^4.0.7"
     lodash.isequal "^4.5.0"

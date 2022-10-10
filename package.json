@@ -20,7 +20,7 @@
     "discord.js-light": "^4.9.0",
     "dotenv": "^16.0.0",
     "pino": "^8.4.0",
-    "pino-pretty": "^9.1.0",
+    "pino-pretty": "^9.1.1",
     "slash-create": "^5.7.1"
   },
   "devDependencies": {

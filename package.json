@@ -21,7 +21,7 @@
     "dotenv": "^16.0.3",
     "pino": "^8.4.0",
     "pino-pretty": "^9.1.1",
-    "slash-create": "^5.7.1"
+    "slash-create": "^5.11.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.33.0",

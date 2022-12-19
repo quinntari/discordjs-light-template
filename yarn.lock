@@ -705,10 +705,10 @@ event-target-shim@^5.0.0:
   resolved "https://registry.yarnpkg.com/event-target-shim/-/event-target-shim-5.0.1.tgz#5d4d3ebdf9583d63a5333ce2deb7480ab2b05789"
   integrity sha512-i/2XbnSz/uxRCU6+NdVJgKWDTM427+MqYbkQzD321DuCQJUqOuJKIA0IM2+W2xtYHdKOmZ4dR6fExsd4SXL+WQ==
 
-eventemitter3@^4.0.7:
-  version "4.0.7"
-  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
-  integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
+eventemitter3@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-5.0.0.tgz#084eb7f5b5388df1451e63f4c2aafd71b217ccb3"
+  integrity sha512-riuVbElZZNXLeLEoprfNYoDSwTBRR44X3mnhdI1YcnENpWTCsTTVZ2zFuqQcpoyqPQIUXdiPEU0ECAq0KQRaHg==
 
 fast-copy@^3.0.0:
   version "3.0.0"
@@ -1339,12 +1339,12 @@ shebang-regex@^3.0.0:
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
-slash-create@^5.7.1:
-  version "5.7.1"
-  resolved "https://registry.yarnpkg.com/slash-create/-/slash-create-5.7.1.tgz#125e5f69442b26a7bc0d0d3e135dec71d4a9694a"
-  integrity sha512-UTuOMW3D4f2k2t5aheO0abnuPLvLgj8M5pYYhaEfgKmUTJsQraTdWeMrh4syD9ZQV0qNgQTU9MCEOnhd6N8mGQ==
+slash-create@^5.11.0:
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/slash-create/-/slash-create-5.11.0.tgz#2eeaa435bfac740680e44c081334ad11c9dde146"
+  integrity sha512-FIJxEv6gOXLCYf1ds7mdcsJywyrw359h2ytACEJ9DL/8LQ6CujAov4bbnZjSvgmr/QsztUvZEX9B4bIQjQtoNA==
   dependencies:
-    eventemitter3 "^4.0.7"
+    eventemitter3 "^5.0.0"
     lodash.isequal "^4.5.0"
     tweetnacl "^1.0.3"
 
